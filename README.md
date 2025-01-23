@@ -1,38 +1,67 @@
-# sv
+# Project Setup Instructions
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Follow the steps below to set up the project on your local machine:
 
-## Creating a project
+## 1. Clone the Repository
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+First, clone the repository to your local machine:
 
 ```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+git clone <repository-url>
+cd <project-folder>
 ```
 
-## Building
-
-To create a production version of your app:
+## 2. Create the .env File
+After cloning, create a .env file in the root directory by referring to the .env.example file. Set the necessary environment variables as shown below:
 
 ```bash
-npm run build
+POSTGRES_USER=...
+POSTGRES_PASSWORD=...
+HOST=...
+PORT=...
+POSTGRES_DATABASE=...
 ```
 
-You can preview the production build with `npm run preview`.
+## 3. Install Dependencies
+To install all required dependencies, run:
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+```bash
+pnpm install
+```
+
+## 4. Set Up the Database
+### Stop Any Running Containers
+Run the following command to stop any running containers:
+
+```bash
+pnpm db:down
+```
+
+### Start the Containers
+Start the containers in detached mode:
+
+```bash
+pnpm db:up
+```
+
+### Generate Database Migrations
+Generate the database migrations using Drizzle Kit:
+
+```bash
+pnpm db:gen
+```
+
+### Push the Migrations to the Database
+Push the migrations to your PostgreSQL database:
+
+```bash
+pnpm db:push
+```
+
+## 5. Start the Development Server
+To start the development server, run:
+
+```bash
+pnpm dev
+```
+Your development environment is now set up and ready to go!
