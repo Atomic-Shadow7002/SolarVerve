@@ -18,12 +18,12 @@
 </script>
 
 <footer class="bg-gradient-to-br from-green-50 via-green-100 to-green-200 py-8">
-	<div class="max-w-7xl mx-auto px-6 sm:px-12">
-		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+	<div class="mx-auto max-w-7xl px-6 sm:px-12">
+		<div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
 			<!-- Brand Section -->
 			<div class="mb-6 flex flex-col">
 				<h2 class="text-4xl font-extrabold text-green-900">SolarVerve</h2>
-				<p class="mt-2 text-sm text-green-800 max-w-xs">
+				<p class="mt-2 max-w-xs text-sm text-green-800">
 					Empowering a sustainable future with accessible renewable energy solutions.
 				</p>
 			</div>
@@ -34,9 +34,9 @@
 				<ul class="space-y-2">
 					{#each navLinks as link}
 						<li>
-							<a 
-								href={link.href} 
-								class="text-green-700 hover:text-green-600 transition-colors duration-200 text-lg"
+							<a
+								href={link.href}
+								class="text-lg text-green-700 transition-colors duration-200 hover:text-green-600"
 								aria-label={`Navigate to ${link.name}`}
 							>
 								{link.name}
@@ -55,10 +55,10 @@
 							href={social.href}
 							target="_blank"
 							rel="noopener noreferrer"
-							class="w-12 h-12 flex items-center justify-center rounded-full bg-white text-green-600 shadow-lg transition-transform duration-300 hover:scale-110 hover:shadow-xl hover:bg-green-600 hover:text-white"
+							class="flex h-12 w-12 items-center justify-center rounded-full bg-white text-green-600 shadow-lg transition-transform duration-300 hover:scale-110 hover:bg-green-600 hover:text-white hover:shadow-xl"
 							aria-label={`Visit our ${social.name} page`}
 						>
-							<svelte:component this={social.icon} class="w-6 h-6" />
+							<svelte:component this={social.icon} class="h-6 w-6" />
 						</a>
 					{/each}
 				</div>
@@ -67,7 +67,8 @@
 
 		<!-- Footer Bottom -->
 		<div class="mt-8 border-t border-green-300 pt-4 text-center text-sm text-green-700">
-			&copy; {new Date().getFullYear()} SolarVerve. All Rights Reserved. | Designed for a sustainable future.
+			&copy; {new Date().getFullYear()} SolarVerve. All Rights Reserved. | Designed for a sustainable
+			future.
 		</div>
 	</div>
 </footer>
