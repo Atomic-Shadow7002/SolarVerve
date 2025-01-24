@@ -17,7 +17,7 @@
   </script>
   
   <svelte:head>
-	<title>Sign In | miruhane.</title>
+	<title>Sign In | SolarVerve</title>
   </svelte:head>
   
   <Card.Root

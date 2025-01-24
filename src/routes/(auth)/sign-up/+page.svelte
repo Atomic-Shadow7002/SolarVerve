@@ -20,7 +20,7 @@
   </script>
   
   <svelte:head>
-    <title>Sign Up | miruhane.</title>
+    <title>Sign Up | SolarVerve</title>
   </svelte:head>
   <Card.Root
     class="mx-auto max-w-sm border border-primary/30 bg-primary/5 bg-opacity-20 shadow-lg backdrop-blur-lg"
