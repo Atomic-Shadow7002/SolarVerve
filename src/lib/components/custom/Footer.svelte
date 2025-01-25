@@ -17,7 +17,7 @@
 	];
 </script>
 
-<footer class="bg-gradient-to-br from-yellow-50 via-yellow-100 to-yellow-200 py-8 w-full">
+<footer class="w-full bg-gradient-to-br from-yellow-50 via-yellow-100 to-yellow-200 py-8">
 	<div class="mx-auto max-w-full px-6 sm:px-12">
 		<div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
 			<!-- Brand Section -->

@@ -25,7 +25,9 @@
 	<div
 		class="bg-soft-yellow flex min-h-screen min-w-full flex-col items-center justify-center px-6 py-10 text-center"
 	>
-		<h1 class={`mb-6 text-5xl font-extrabold text-yellow-900 drop-shadow-lg ${headingAnimation}`}>Switch to SolarVerve Today!</h1>
+		<h1 class={`mb-6 text-5xl font-extrabold text-yellow-900 drop-shadow-lg ${headingAnimation}`}>
+			Switch to SolarVerve Today!
+		</h1>
 		<p class="mb-8 text-lg font-medium text-gray-700 sm:w-3/4">
 			Analyze costs, access resources, and unlock government subsidies for a greener, cleaner
 			future.
@@ -65,16 +67,14 @@
 					Save money by reducing your dependency on traditional energy sources.
 				</p>
 			</div>
-		
+
 			<!-- Wind Turbine Card -->
 			<div
 				class="card-shadow card-hover flex flex-col items-center rounded-lg bg-white p-6 text-center"
 			>
 				<img src={WindTurbineCard} alt="Eco-Friendly Solutions" class="mb-4 h-28 w-28" />
 				<h3 class="mb-2 text-xl font-semibold text-yellow-700">Eco-Friendly Solutions</h3>
-				<p class="text-gray-600">
-					Harness renewable resources to minimize your carbon footprint.
-				</p>
+				<p class="text-gray-600">Harness renewable resources to minimize your carbon footprint.</p>
 			</div>
 			<!-- Energy Efficiency Card -->
 			<div
@@ -86,7 +86,7 @@
 					Take advantage of government programs to make the switch affordable.
 				</p>
 			</div>
-		</div>		
+		</div>
 	</section>
 
 	<!-- Features Section -->
