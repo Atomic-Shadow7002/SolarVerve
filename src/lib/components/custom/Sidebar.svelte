@@ -25,7 +25,7 @@
 		<ul>
 			<li>
 				<a
-					href="/home"
+					href="/home" onclick={toggleSidebar}
 					class="flex items-center space-x-3 rounded p-2 text-white hover:bg-gray-700"
 				>
 					<span>🏠</span>
@@ -34,7 +34,7 @@
 			</li>
 			<li>
 				<a
-					href="/home/solar"
+					href="/home/solar" onclick={toggleSidebar}
 					class="flex items-center space-x-3 rounded p-2 text-white hover:bg-gray-700"
 				>
 					<span>☀️</span>
@@ -43,7 +43,7 @@
 			</li>
 			<li>
 				<a
-					href="/home/ev"
+					href="/home/ev" onclick={toggleSidebar}
 					class="flex items-center space-x-3 rounded p-2 text-white hover:bg-gray-700"
 				>
 					<span>🚗</span>
@@ -52,7 +52,7 @@
 			</li>
 			<li>
 				<a
-					href="/home/subsidies"
+					href="/home/subsidies" onclick={toggleSidebar}
 					class="flex items-center space-x-3 rounded p-2 text-white hover:bg-gray-700"
 				>
 					<span>💰</span>
