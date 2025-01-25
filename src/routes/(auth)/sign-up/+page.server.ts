@@ -9,7 +9,7 @@ import type { PageServerLoad, Actions } from './$types';
 
 export const load: PageServerLoad = async ({ locals }) => {
 	if (locals.session) {
-		return redirect(302, '/solar');
+		return redirect(302, '/home');
 	}
 	return {};
 };
@@ -75,6 +75,6 @@ export const actions: Actions = {
 			return fail(500, { message: 'Oops...Something went wrong!' });
 		}
 
-		return redirect(302, '/solar');
+		return redirect(302, '/home');
 	}
 };
