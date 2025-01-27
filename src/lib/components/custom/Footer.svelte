@@ -17,26 +17,26 @@
 	];
 </script>
 
-<footer class="bg-gradient-to-br from-green-50 via-green-100 to-green-200 py-8">
-	<div class="mx-auto max-w-7xl px-6 sm:px-12">
+<footer class="w-full bg-gradient-to-br from-yellow-50 via-yellow-100 to-yellow-200 py-8">
+	<div class="mx-auto max-w-full px-6 sm:px-12">
 		<div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
 			<!-- Brand Section -->
 			<div class="mb-6 flex flex-col">
-				<h2 class="text-4xl font-extrabold text-green-900">SolarVerve</h2>
-				<p class="mt-2 max-w-xs text-sm text-green-800">
+				<h2 class="text-4xl font-extrabold text-yellow-900">SolarVerve</h2>
+				<p class="mt-2 max-w-xs text-sm text-yellow-800">
 					Empowering a sustainable future with accessible renewable energy solutions.
 				</p>
 			</div>
 
 			<!-- Navigation Links -->
 			<div class="mb-6">
-				<h3 class="mb-4 text-2xl font-bold text-green-900">Quick Links</h3>
+				<h3 class="mb-4 text-2xl font-bold text-yellow-900">Quick Links</h3>
 				<ul class="space-y-2">
 					{#each navLinks as link}
 						<li>
 							<a
 								href={link.href}
-								class="text-lg text-green-700 transition-colors duration-200 hover:text-green-600"
+								class="text-lg text-yellow-700 transition-colors duration-200 hover:text-yellow-600"
 								aria-label={`Navigate to ${link.name}`}
 							>
 								{link.name}
@@ -48,14 +48,14 @@
 
 			<!-- Social Media Links -->
 			<div class="mb-6">
-				<h3 class="mb-4 text-2xl font-bold text-green-900">Follow Us</h3>
+				<h3 class="mb-4 text-2xl font-bold text-yellow-900">Follow Us</h3>
 				<div class="flex space-x-6">
 					{#each socialLinks as social}
 						<a
 							href={social.href}
 							target="_blank"
 							rel="noopener noreferrer"
-							class="flex h-12 w-12 items-center justify-center rounded-full bg-white text-green-600 shadow-lg transition-transform duration-300 hover:scale-110 hover:bg-green-600 hover:text-white hover:shadow-xl"
+							class="flex h-12 w-12 items-center justify-center rounded-full bg-white text-yellow-600 shadow-lg transition-transform duration-300 hover:scale-110 hover:bg-yellow-600 hover:text-white hover:shadow-xl"
 							aria-label={`Visit our ${social.name} page`}
 						>
 							<svelte:component this={social.icon} class="h-6 w-6" />
@@ -66,7 +66,7 @@
 		</div>
 
 		<!-- Footer Bottom -->
-		<div class="mt-8 border-t border-green-300 pt-4 text-center text-sm text-green-700">
+		<div class="mt-8 border-t border-yellow-300 pt-4 text-center text-sm text-yellow-700">
 			&copy; {new Date().getFullYear()} SolarVerve. All Rights Reserved. | Designed for a sustainable
 			future.
 		</div>
